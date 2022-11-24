@@ -1,15 +1,3 @@
-<head>
-    <style>
-        table{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th,td{
-            border: 1px solid black;
-            padding: 3px;
-        }
-    </style>
-</head>
 <h1>Tabela <i>czytelnicy</i></h1>
 <?php
 $query = 'SELECT * FROM `czytelnicy`;';

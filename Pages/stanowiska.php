@@ -1,8 +1,7 @@
-<h1>Tabela <i>dzialy</i></h1>
-
+<h1>Tabela <i>stanowiska</i></h1>
 <table>
     <?php
-    $query = 'SELECT * FROM `dzialy` LIMIT 0,1;';
+    $query = 'SELECT * FROM `stanowiska` LIMIT 0,1;';
     $result = mysqli_query($conn, $query);
     if(mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
@@ -13,7 +12,7 @@
             echo '</tr>';
         }
     }
-    $query = 'SELECT * FROM `dzialy`;';
+    $query = 'SELECT * FROM `stanowiska`;';
     $result = mysqli_query($conn, $query);
     if(mysqli_num_rows($result) > 0)
     {
@@ -24,9 +23,11 @@
             {
                 echo '<td>'.$😜😜.'</td>';
             }
-            echo '</tr>';
+            echo '<td><a href="?page=stanowiska_formularz&stanowisko=' .$row['Id_stanowisko'].'">NNNNNNN</a></td></tr>';
         }
         echo '</table>';
     }
     ?>
 </table>
+
+
