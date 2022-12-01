@@ -23,7 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<pre>' . $query . '</pre>';
         $result = mysqli_query($conn, $query);
         $row = mysqli_fetch_assoc($result);
-        if ($row){
+        if ($row)
+        {
+            setcookie("Ciastko", json_encode($row), time() + 86400, "/");
             ?>
             <form action="?page=stanowiska_formularz" method="post">
             <table>

@@ -39,6 +39,8 @@
         }
         echo '</table>';
     }
+    echo $_SESSION['sebix'];
     ?>
+
 </table>
 

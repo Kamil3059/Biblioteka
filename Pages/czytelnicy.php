@@ -16,3 +16,4 @@ if(mysqli_num_rows($result) > 0)
     }
     echo '</table>';
 }
+$_SESSION['sebix']="smieszek";

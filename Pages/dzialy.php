@@ -17,8 +17,10 @@
     $result = mysqli_query($conn, $query);
     if(mysqli_num_rows($result) > 0)
     {
+        $dzialy = array();
         while ($row = mysqli_fetch_assoc($result))
         {
+            $dzialy[]=$row;
             echo '<tr>';
             foreach($row as $😎 => $😜😜)
             {
@@ -28,5 +30,9 @@
         }
         echo '</table>';
     }
+    setcookie('dzialy', json_encode($dzialy), 86400+time(), '/')
+
+
+
     ?>
-</table>
+
